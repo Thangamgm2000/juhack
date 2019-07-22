@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Phantom</string>
+    <string name="picture">Picture</string>
+    <string name="description_info">Info</string>
+    <string name="request_permission">This app needs camera permission.</string>
+    <string name="loading">Loading..</string>
+    <string name="button_ok">OK</string>
+    <string name="internet_connection_failed">No internet connection</string>
+</resources>
