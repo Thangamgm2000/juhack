@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+   <body>
+   <table style="border:1px;">
+         <thead>
+            <td>Registration Number<t/></td>
+            <td>Name<t/></td>
+            <td>Chassis Number<t/></td>
+            <td>Engine Number<t/></td>
+            <td>Registration Date<t/></td>
+            <td>Vehicle Class<t/></td>
+            <td>Fuel Type<t/></td>
+            <td>Maker<t/></td>
+            <td>Fitness Upto<t/></td>
+            <td>Road Tax upto<t/></td>
+            <td>License Path<t/></td>
+            <td>Insurance Path<t/></td>
+            <td>RCBook Path<t/></td>
+         </thead>
+         
+         {% for row in rows %}
+         
+            <tr>
+               <td>{{row["regno"]}}</td>
+               <td>{{row["name"]}}</td>
+               <td> {{ row["chassis"]}}</td>
+               <td> {{ row["engine"]}}</td>
+               <td> {{ row["regdate"]}}</td>
+               <td> {{ row["vehicle"]}}</td>
+               <td> {{ row["fuel"]}}</td>
+               <td> {{ row["maker"]}}</td>
+               <td> {{ row["fitnessdate"]}}</td>
+               <td> {{ row["roadtaxdate"]}}</td>
+               <td> {{ row["license"]}}</td>
+               <td> {{ row["insurance"]}}</td>
+               <td> {{ row["rcbook"]}}</td>
+               
+            </tr>
+         {% endfor %}
+      </table>
+      
+      <a href = "/">Go back to home page</a>
+      <a href = "/new">Add New record</a>
+   </body>
+</html>

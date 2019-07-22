@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <body style="text-align: center">
+        <form action="{{url_for('addrec')}}" method="POST" enctype="multipart/form-data">     <!-- url_for Creates Dynamic URL -->
+        <h2>Vehicle Information</h2>
+         Registration Number
+         <input type = "text" name = "regno" /></br></br>
+         Owner Name
+         <input type="text" name = "name" ></textarea><br></br>
+         Chassis Number
+         <input type = "text" name = "chassis" /><br></br>
+         Engine Number
+         <input type = "text" name = "engine" /><br></br>
+         Registration date
+         <input type = "text" name = "regdate" /><br></br>
+         Vehicle Class
+         <select type="text" name="vehicle">
+             <option value="mc50cc">MC 50CC</option>
+             <option value="mcwog">MCWOG/FVG</option>
+             <option value="lmvnt">LMV-NT</option>
+             <option value="mcex50cc">MC EX50CC</option>
+             <option value="mcgear">MC With Gear or Cycle</option>
+             <option value="mgv">MGV</option>
+             <option value="lmv">LMV</option>
+             <option value="hmv">HMV</option>
+             <option value="hgmv">HGMV</option>
+             <option value="hpmv">HPMV/HTV</option>
+             <option value="trailer">Trailer</option>
+         </select><br></br>
+         Fuel Type
+         <select type="text" name="fuel">
+             <option value="petrol">Petrol</option>
+             <option value="diesel">Diesel</option>
+             <option value="lpg">LPG</option>
+         </select><br></br>
+         Maker
+         <input type = "text" name = "maker" /><br></br>
+         Fitness upto
+         <input type = "text" name = "fitnessdate" /><br></br>
+         Road Tax paid upto
+         <input type = "text" name = "roadtaxdate" /><br></br>
+         License File <input type="file" name="license"/><br><br>
+         Insurance File <input type="file" name="insurance"/><br><br>
+         RC Book File <input type="file" name="rcbook"/><br><br>
+         <input type = "submit" value = "Submit" /><br>
+        </form>
+        <a href="/list">Show the records</a>
+    </body>
+</html>
